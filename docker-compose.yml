@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  fastapi_app:
+    build: .
+    container_name: production_rag_fastapi
+    ports:
+      - "8010:8010"
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    command: >
+      uvicorn app.main:app --host 0.0.0.0 --port 8010
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

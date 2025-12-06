@@ -1,0 +1,139 @@
+2025-12-06 13:17:13,624 - INFO - Initializing embeddings
+2025-12-06 13:17:14,339 - INFO - Initializing Groq LLM
+2025-12-06 13:17:14,785 - INFO - Initializing Pinecone vector store
+2025-12-06 13:17:15,351 - INFO - Initializing embeddings
+2025-12-06 13:17:24,849 - INFO - HTTP Request: POST https://tlrcrmopenai.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-12-06 13:17:27,134 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-06 13:17:40,631 - INFO - HTTP Request: POST https://tlrcrmopenai.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+2025-12-06 13:17:42,532 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-06 13:25:48,614 - INFO - Initializing embeddings with MiniLM L6 v2
+2025-12-06 13:25:48,621 - INFO - Use pytorch device_name: cpu
+2025-12-06 13:25:48,621 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-06 13:25:52,400 - INFO - Initializing Groq LLM
+2025-12-06 13:25:52,839 - INFO - Initializing Pinecone vector store
+2025-12-06 13:25:53,375 - INFO - Initializing embeddings with MiniLM L6 v2
+2025-12-06 13:25:53,376 - INFO - Use pytorch device_name: cpu
+2025-12-06 13:25:53,376 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-06 13:27:31,056 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-40' coro=<py_anext.<locals>.anext_impl() done, defined at D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\utils\aiter.py:71> exception=KeyError('context')>
+Traceback (most recent call last):
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\utils\aiter.py", line 78, in anext_impl
+    return await __anext__(iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 4190, in atransform
+    async for chunk in self._atransform_stream_with_config(
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 2478, in _atransform_stream_with_config
+    chunk = await coro_with_context(py_anext(iterator), context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 4176, in _atransform
+    chunk = AddableDict({step_name: task.result()})
+                                    ^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 4159, in get_next_chunk
+    return await py_anext(generator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 5940, in atransform
+    async for item in self.bound.atransform(
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 3659, in atransform
+    async for chunk in self._atransform_stream_with_config(
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 2478, in _atransform_stream_with_config
+    chunk = await coro_with_context(py_anext(iterator), context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 3626, in _atransform
+    async for output in final_pipeline:
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\output_parsers\transform.py", line 95, in atransform
+    async for chunk in self._atransform_stream_with_config(
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 2438, in _atransform_stream_with_config
+    final_input: Optional[Input] = await py_anext(input_for_tracing, None)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\utils\aiter.py", line 78, in anext_impl
+    return await __anext__(iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\utils\aiter.py", line 133, in tee_peer
+    item = await iterator.__anext__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 1616, in atransform
+    async for ichunk in input:
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 1616, in atransform
+    async for ichunk in input:
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 5940, in atransform
+    async for item in self.bound.atransform(
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\passthrough.py", line 666, in atransform
+    async for chunk in self._atransform_stream_with_config(
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 2478, in _atransform_stream_with_config
+    chunk = await coro_with_context(py_anext(iterator), context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\passthrough.py", line 655, in _atransform
+    yield await first_map_chunk_task
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\utils\aiter.py", line 78, in anext_impl
+    return await __anext__(iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 4190, in atransform
+    async for chunk in self._atransform_stream_with_config(
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 2478, in _atransform_stream_with_config
+    chunk = await coro_with_context(py_anext(iterator), context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 4176, in _atransform
+    chunk = AddableDict({step_name: task.result()})
+                                    ^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 4159, in get_next_chunk
+    return await py_anext(generator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 5257, in atransform
+    async for output in self._atransform_stream_with_config(
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 2478, in _atransform_stream_with_config
+    chunk = await coro_with_context(py_anext(iterator), context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 5221, in _atransform
+    output = await acall_func_with_variable_args(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 5196, in f
+    return await run_in_executor(config, func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\config.py", line 611, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\thela\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\config.py", line 602, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\base.py", line 5190, in func
+    return call_func_with_variable_args(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain_core\runnables\config.py", line 430, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aadhil-Codes\streaming-chatbot\env\Lib\site-packages\langchain\chains\combine_documents\stuff.py", line 86, in format_docs
+    for doc in inputs[document_variable_name]
+               ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'context'
+2025-12-06 13:27:39,284 - INFO - Initializing embeddings with MiniLM L6 v2
+2025-12-06 13:27:39,284 - INFO - Use pytorch device_name: cpu
+2025-12-06 13:27:39,284 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-06 13:27:42,722 - INFO - Initializing Groq LLM
+2025-12-06 13:27:43,167 - INFO - Initializing Pinecone vector store
+2025-12-06 13:27:44,693 - INFO - Initializing embeddings with MiniLM L6 v2
+2025-12-06 13:27:44,693 - INFO - Use pytorch device_name: cpu
+2025-12-06 13:27:44,693 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-06 13:27:59,117 - INFO - Initializing embeddings with MiniLM L6 v2
+2025-12-06 13:27:59,117 - INFO - Use pytorch device_name: cpu
+2025-12-06 13:27:59,117 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-06 13:28:02,545 - INFO - Initializing Groq LLM
+2025-12-06 13:28:02,971 - INFO - Initializing Pinecone vector store
+2025-12-06 13:28:03,851 - INFO - Initializing embeddings with MiniLM L6 v2
+2025-12-06 13:28:03,851 - INFO - Use pytorch device_name: cpu
+2025-12-06 13:28:03,851 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-06 13:28:15,788 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-06 13:28:27,638 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-06 13:28:41,597 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-06 13:30:23,010 - INFO - Initializing embeddings with MiniLM L6 v2
+2025-12-06 13:30:23,011 - INFO - Use pytorch device_name: cpu
+2025-12-06 13:30:23,011 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-06 13:30:26,535 - INFO - Initializing Groq LLM
+2025-12-06 13:30:26,975 - INFO - Initializing Pinecone vector store
+2025-12-06 13:30:28,188 - INFO - Initializing embeddings with MiniLM L6 v2
+2025-12-06 13:30:28,195 - INFO - Use pytorch device_name: cpu
+2025-12-06 13:30:28,195 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-06 13:30:45,546 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

@@ -1,0 +1,653 @@
+# TechNova Solutions - Customer Support Knowledge Base
+
+## Company Information
+
+### About TechNova Solutions
+TechNova Solutions is a leading provider of cloud-based project management and collaboration software. Founded in 2018, we serve over 50,000 businesses worldwide with our flagship product, ProjectHub Pro.
+
+**Business Hours:**
+- Monday - Friday: 9:00 AM - 8:00 PM EST
+- Saturday: 10:00 AM - 6:00 PM EST
+- Sunday: Closed
+- 24/7 Emergency Support available for Enterprise customers
+
+**Contact Information:**
+- Email: support@technovasolutions.com
+- Phone: 1-800-TECHNOVA (1-800-832-4668)
+- Live Chat: Available on our website during business hours
+- Emergency Hotline (Enterprise only): 1-800-TECH-911
+
+---
+
+## Product Information
+
+### ProjectHub Pro Plans
+
+#### Free Plan
+- Up to 5 team members
+- 3 active projects
+- 5GB storage
+- Basic reporting
+- Email support
+- Price: $0/month
+
+#### Professional Plan
+- Up to 25 team members
+- Unlimited projects
+- 100GB storage per user
+- Advanced reporting and analytics
+- Priority email and chat support
+- API access
+- Price: $29/user/month (billed annually) or $35/user/month (billed monthly)
+
+#### Business Plan
+- Up to 100 team members
+- Unlimited projects
+- 500GB storage per user
+- Advanced reporting, analytics, and forecasting
+- Priority support with 4-hour response time
+- API access with higher rate limits
+- Custom integrations
+- Dedicated account manager
+- Price: $59/user/month (billed annually) or $69/user/month (billed monthly)
+
+#### Enterprise Plan
+- Unlimited team members
+- Unlimited projects
+- Unlimited storage
+- All Business features plus:
+- 24/7 phone support with 1-hour response time
+- On-premise deployment option
+- Advanced security features (SSO, SAML)
+- Custom SLA
+- Quarterly business reviews
+- Price: Custom pricing (contact sales)
+
+---
+
+## Account Management
+
+### Creating an Account
+
+1. Visit www.technovasolutions.com
+2. Click "Sign Up" in the top right corner
+3. Enter your email address and create a password
+4. Verify your email address through the confirmation link
+5. Complete your profile information
+6. Choose your plan (Free to start, upgrade anytime)
+
+**Note:** Users must be 18 years or older to create an account. Business email addresses are required for paid plans.
+
+### Password Reset
+
+If you've forgotten your password:
+1. Go to the login page
+2. Click "Forgot Password?"
+3. Enter your registered email address
+4. Check your email for a password reset link (valid for 24 hours)
+5. Click the link and create a new password
+6. Password must be at least 8 characters with one uppercase letter, one number, and one special character
+
+**Troubleshooting:** If you don't receive the reset email within 15 minutes, check your spam folder. Still having issues? Contact support with your account email address.
+
+### Changing Your Email Address
+
+1. Log in to your account
+2. Navigate to Settings > Account Settings
+3. Click "Change Email Address"
+4. Enter your new email address
+5. Verify the new email address through confirmation link
+6. Enter your current password to confirm
+
+**Important:** Your login credentials will update to the new email address. Make sure you have access to the new email before making changes.
+
+### Account Deletion
+
+To delete your account:
+1. Go to Settings > Account Settings
+2. Scroll to "Delete Account" section
+3. Click "Request Account Deletion"
+4. Confirm by entering your password
+5. Your account will be deactivated immediately and permanently deleted after 30 days
+
+**Data Retention:** During the 30-day grace period, you can reactivate your account by logging in. After 30 days, all data is permanently deleted and cannot be recovered.
+
+---
+
+## Billing and Subscriptions
+
+### Payment Methods Accepted
+- Credit Cards: Visa, Mastercard, American Express, Discover
+- Debit Cards with major card network logos
+- PayPal
+- Bank Transfer (Enterprise plans only)
+- Purchase Orders (Enterprise plans with approved credit)
+
+### Upgrading Your Plan
+
+To upgrade your subscription:
+1. Go to Settings > Billing
+2. Click "Change Plan"
+3. Select your desired plan
+4. Review the prorated charges
+5. Confirm and enter payment information
+6. Upgrade takes effect immediately
+
+**Proration:** When upgrading mid-cycle, you'll be charged a prorated amount for the remainder of the current billing period. Your new plan rate applies from the next billing cycle.
+
+### Downgrading Your Plan
+
+To downgrade your subscription:
+1. Go to Settings > Billing
+2. Click "Change Plan"
+3. Select a lower-tier plan
+4. Review the changes and limitations
+5. Confirm downgrade
+
+**Important:** Downgrades take effect at the end of your current billing cycle. You retain access to your current plan features until then. If you exceed the limits of your new plan (team members, storage), you'll need to remove excess data before the downgrade processes.
+
+### Cancellation Policy
+
+You may cancel your subscription at any time:
+1. Go to Settings > Billing
+2. Click "Cancel Subscription"
+3. Provide feedback (optional)
+4. Confirm cancellation
+
+**Refund Policy:**
+- Monthly subscriptions: No refunds for partial months. Access continues until end of billing period.
+- Annual subscriptions: Refunds available within 30 days of initial purchase or renewal. After 30 days, no refunds but access continues until subscription end date.
+- Free plan: You can downgrade to free plan instead of canceling completely.
+
+### Failed Payments
+
+If a payment fails:
+- Day 1: Automatic retry + email notification
+- Day 3: Second automatic retry + email notification
+- Day 7: Third automatic retry + email notification + account features limited
+- Day 10: Account suspended, data retained for 60 days
+- Day 70: Account and all data permanently deleted
+
+**To resolve:** Update your payment method in Settings > Billing before account suspension.
+
+### Invoices and Receipts
+
+Access your billing history:
+1. Go to Settings > Billing
+2. Click "Billing History"
+3. Download PDF invoices or receipts for any past payment
+
+Invoices are automatically emailed to the account owner after each successful payment.
+
+---
+
+## Technical Support
+
+### Common Technical Issues
+
+#### Unable to Log In
+
+**Possible Solutions:**
+- Verify you're using the correct email address
+- Try password reset if you've forgotten your password
+- Clear browser cache and cookies
+- Try a different browser or incognito/private mode
+- Check if your organization has IP restrictions enabled
+- Verify your account hasn't been suspended due to payment issues
+
+#### Slow Performance
+
+**Troubleshooting Steps:**
+1. Check your internet connection speed (minimum 5 Mbps recommended)
+2. Clear browser cache and cookies
+3. Disable browser extensions temporarily
+4. Try a different browser (Chrome, Firefox, Safari, or Edge recommended)
+5. Check our status page for any ongoing incidents: status.technovasolutions.com
+6. If issues persist, run our diagnostic tool: Settings > Help > Run Diagnostics
+
+#### File Upload Issues
+
+**Common Causes:**
+- File exceeds maximum size limit (100MB per file)
+- Unsupported file format
+- Storage quota exceeded
+- Browser compatibility issues
+- Network connection interrupted during upload
+
+**Solutions:**
+- Compress large files before uploading
+- Supported formats: PDF, DOC, DOCX, XLS, XLSX, PPT, PPTX, JPG, PNG, GIF, MP4, ZIP
+- Check your storage usage: Settings > Storage
+- Use latest version of Chrome, Firefox, Safari, or Edge
+- For files over 100MB, use our desktop application
+
+#### Mobile App Not Syncing
+
+**Troubleshooting:**
+1. Check your mobile data/WiFi connection
+2. Ensure you have the latest app version (check App Store/Play Store)
+3. Force close and reopen the app
+4. Log out and log back in
+5. Check if Background App Refresh is enabled (iOS) or background data is allowed (Android)
+6. Uninstall and reinstall the app as last resort
+
+### System Requirements
+
+**Web Application:**
+- Modern browser (Chrome 90+, Firefox 88+, Safari 14+, Edge 90+)
+- Minimum 5 Mbps internet connection
+- JavaScript enabled
+- Cookies enabled
+
+**Desktop Application:**
+- Windows 10 or later, macOS 10.15 or later
+- 4GB RAM minimum (8GB recommended)
+- 500MB available disk space
+- Internet connection required
+
+**Mobile Application:**
+- iOS 14.0 or later (iPhone, iPad)
+- Android 9.0 or later
+- 100MB available storage
+- Internet connection required (offline mode available for Premium users)
+
+---
+
+## Feature Documentation
+
+### Creating Projects
+
+1. Click the "+" button in the Projects sidebar
+2. Enter project name (required)
+3. Add project description (optional)
+4. Set project color and icon
+5. Choose privacy settings (Public, Private, or Team-only)
+6. Assign team members
+7. Set project deadline (optional)
+8. Click "Create Project"
+
+**Project Limits by Plan:**
+- Free: 3 active projects
+- Professional: Unlimited
+- Business: Unlimited
+- Enterprise: Unlimited
+
+### Task Management
+
+**Creating Tasks:**
+1. Open a project
+2. Click "Add Task" or press "T" keyboard shortcut
+3. Enter task title
+4. Add description, assignee, due date, and priority
+5. Attach files or add subtasks as needed
+6. Click "Create Task"
+
+**Task Statuses:**
+- To Do: Task not yet started
+- In Progress: Task actively being worked on
+- In Review: Task completed, awaiting approval
+- Completed: Task finished and approved
+- Blocked: Task cannot proceed due to dependencies
+
+**Task Priorities:**
+- Low: Nice to have, no urgent deadline
+- Medium: Important but not urgent
+- High: Important and time-sensitive
+- Critical: Urgent, blocking other work
+
+### Team Collaboration
+
+**Inviting Team Members:**
+1. Go to Settings > Team
+2. Click "Invite Members"
+3. Enter email addresses (comma-separated for multiple)
+4. Select role: Admin, Member, or Guest
+5. Click "Send Invitations"
+
+**Invitation expires after 7 days if not accepted.**
+
+**Role Permissions:**
+
+*Admin:*
+- Full access to all projects
+- Can manage billing and subscription
+- Can invite/remove team members
+- Can manage team settings
+- Can delete projects
+
+*Member:*
+- Can create and manage projects they're assigned to
+- Can invite guests to specific projects
+- Cannot access billing or team settings
+- Cannot delete other members' projects
+
+*Guest:*
+- Limited access to specific projects only
+- Can view and comment on tasks
+- Cannot create projects
+- Cannot invite other users
+- Limited to 3 active guests on Free plan
+
+### Comments and Mentions
+
+**Adding Comments:**
+- Click on any task or project
+- Type your comment in the comment box
+- Press Enter or click "Post"
+
+**Mentioning Users:**
+- Type "@" followed by the user's name
+- Select from the dropdown list
+- User receives notification of mention
+
+**Formatting Options:**
+- **Bold**: Use **text** or Ctrl+B
+- *Italic*: Use *text* or Ctrl+I
+- Links: Paste URL, automatically converted
+- Attachments: Drag and drop or click attach icon
+
+### Integrations
+
+**Available Integrations:**
+
+*Slack:* Receive project notifications in Slack channels
+- Setup: Settings > Integrations > Slack > Connect
+- Configure which projects send notifications
+
+*Google Drive:* Attach Google Drive files to tasks
+- Setup: Settings > Integrations > Google Drive > Authorize
+- Access drive files directly in ProjectHub
+
+*GitHub:* Link commits and pull requests to tasks
+- Setup: Settings > Integrations > GitHub > Connect Repository
+- Requires admin access to GitHub repository
+
+*Zapier:* Connect to 5,000+ apps
+- Available on Professional plan and above
+- Setup: Settings > Integrations > Zapier > Get API Key
+
+*Calendar Sync:* Sync tasks to Google Calendar, Outlook, or Apple Calendar
+- Setup: Settings > Integrations > Calendars
+- Two-way sync available on Business plan and above
+
+---
+
+## Security and Privacy
+
+### Data Security
+
+**Encryption:**
+- All data encrypted in transit (TLS 1.3)
+- All data encrypted at rest (AES-256)
+- End-to-end encryption available for Enterprise plan
+
+**Data Centers:**
+- Primary: US-East (Virginia)
+- Secondary: EU-West (Ireland)
+- Enterprise customers can choose data residency
+
+**Backups:**
+- Automated daily backups
+- 30-day backup retention
+- Point-in-time recovery available on request (Business and Enterprise)
+
+### Privacy
+
+**Data Collection:**
+We collect only essential data:
+- Account information (name, email, password)
+- Usage data (features used, time spent)
+- Device information (browser, OS, IP address)
+
+**We never:**
+- Sell your data to third parties
+- Use your project data for marketing
+- Share your data without consent (except as required by law)
+
+**Your Rights:**
+- Access your data: Settings > Privacy > Download My Data
+- Delete your data: Settings > Account > Delete Account
+- Control marketing emails: Settings > Notifications
+
+### Two-Factor Authentication (2FA)
+
+**Enabling 2FA:**
+1. Go to Settings > Security
+2. Click "Enable Two-Factor Authentication"
+3. Scan QR code with authenticator app (Google Authenticator, Authy, etc.)
+4. Enter verification code from app
+5. Save recovery codes in a safe place
+
+**2FA Required for:**
+- All admin accounts on Business and Enterprise plans
+- Optional but recommended for all users
+
+### Single Sign-On (SSO)
+
+**Available on Enterprise plan only**
+
+Supported providers:
+- Google Workspace
+- Microsoft Azure AD
+- Okta
+- OneLogin
+- Custom SAML 2.0 providers
+
+Setup requires admin configuration. Contact support for setup assistance.
+
+---
+
+## Troubleshooting Common Issues
+
+### "Storage Quota Exceeded" Error
+
+**Solutions:**
+1. Check current storage usage: Settings > Storage
+2. Delete unnecessary files or old projects
+3. Compress large files before uploading
+4. Upgrade to plan with more storage
+5. Archive completed projects to free up space
+
+### Missing Notifications
+
+**Check these settings:**
+1. Browser notifications enabled: Check browser settings
+2. Email notifications enabled: Settings > Notifications
+3. Email not in spam folder
+4. Notification preferences set correctly for specific projects
+5. If using mobile app, push notifications enabled in device settings
+
+### Can't Find a Project or Task
+
+**Possible Reasons:**
+- Project is archived: Check "Archived Projects" in sidebar
+- Task is completed: Enable "Show Completed" filter
+- You were removed from the project
+- Project was deleted by owner
+- You're searching in wrong workspace (if multiple workspaces)
+
+**To find:**
+- Use global search (Ctrl+K or Cmd+K)
+- Check filters applied to project view
+- Contact project owner if you believe you should have access
+
+### Accidental Deletion Recovery
+
+**What can be recovered:**
+- Deleted projects: Recoverable within 30 days (Settings > Trash)
+- Deleted tasks: Recoverable within 30 days (Project > Trash)
+- Deleted comments: Not recoverable
+- Deleted files: Recoverable within 30 days (Settings > Trash)
+
+**To recover:**
+1. Go to Settings > Trash or Project > Trash
+2. Find the deleted item
+3. Click "Restore"
+4. Item returns to original location
+
+**Note:** After 30 days, deleted items are permanently erased and cannot be recovered.
+
+---
+
+## API Documentation
+
+### Getting Your API Key
+
+**Available on Professional plan and above**
+
+1. Go to Settings > Developers
+2. Click "Generate API Key"
+3. Copy and securely store your key
+4. Never share your API key publicly
+
+**Rate Limits:**
+- Professional: 1,000 requests/hour
+- Business: 5,000 requests/hour
+- Enterprise: Custom limits
+
+### Basic API Usage
+
+**Authentication:**
+```
+Authorization: Bearer YOUR_API_KEY
+```
+
+**Base URL:**
+```
+https://api.technovasolutions.com/v1/
+```
+
+**Common Endpoints:**
+- GET /projects - List all projects
+- POST /projects - Create new project
+- GET /tasks - List all tasks
+- POST /tasks - Create new task
+- PUT /tasks/:id - Update task
+- DELETE /tasks/:id - Delete task
+
+**Full API documentation:** https://docs.technovasolutions.com/api
+
+---
+
+## Contact and Escalation
+
+### When to Contact Support
+
+Contact us for:
+- Technical issues not resolved by troubleshooting
+- Billing questions or disputes
+- Account access problems
+- Feature requests
+- Bug reports
+- Security concerns
+
+### Response Time SLA
+
+**Free Plan:**
+- Email support: 48-72 hours
+- No phone or chat support
+
+**Professional Plan:**
+- Email support: 24 hours
+- Chat support: During business hours, typically under 2 hours
+- No phone support
+
+**Business Plan:**
+- All channels: 4 hours during business hours
+- Phone support: Available during business hours
+- Dedicated account manager
+
+**Enterprise Plan:**
+- Critical issues: 1 hour, 24/7
+- Non-critical issues: 2 hours during business hours
+- Dedicated support team
+- Named support contacts
+
+### Escalation Process
+
+If your issue isn't resolved:
+
+**Level 1:** Front-line support (initial contact)
+**Level 2:** Technical specialists (automatically escalated after 48 hours or by request)
+**Level 3:** Senior engineers (for complex technical issues)
+**Level 4:** Management (for unresolved issues or complaints)
+
+To request escalation: Reply to your support ticket with "Please escalate" or call our phone support line.
+
+---
+
+## Additional Resources
+
+### Training and Tutorials
+
+**Free Resources:**
+- Getting Started Guide: help.technovasolutions.com/getting-started
+- Video Tutorials: youtube.com/technovasolutions
+- Webinars: Weekly live sessions, register at technovasolutions.com/webinars
+- Knowledge Base: help.technovasolutions.com
+
+**Paid Training (Business and Enterprise):**
+- Custom onboarding sessions
+- Team training workshops
+- Certification programs
+
+### Community
+
+**User Community:**
+- Community Forum: community.technovasolutions.com
+- Feature Requests: feedback.technovasolutions.com
+- User Groups: Connect with local users, find at technovasolutions.com/user-groups
+
+**Social Media:**
+- Twitter: @TechNovaSolutions
+- LinkedIn: TechNova Solutions
+- Facebook: facebook.com/technovasolutions
+
+### Release Notes and Updates
+
+Check for latest features and updates:
+- Product Updates Blog: blog.technovasolutions.com
+- Release Notes: technovasolutions.com/releases
+- System Status: status.technovasolutions.com
+
+---
+
+## Frequently Asked Questions
+
+**Q: Can I use ProjectHub Pro offline?**
+A: Limited offline functionality is available on Business and Enterprise plans through our desktop and mobile apps. Changes sync when you reconnect.
+
+**Q: How many team members can I have?**
+A: Depends on your plan. Free: 5, Professional: 25, Business: 100, Enterprise: Unlimited.
+
+**Q: Can I transfer project ownership?**
+A: Yes. Open project settings and click "Transfer Ownership." The new owner must accept the transfer.
+
+**Q: Is my data backed up?**
+A: Yes, we perform automated daily backups with 30-day retention. Business and Enterprise customers can request point-in-time recovery.
+
+**Q: Can I export my data?**
+A: Yes. Go to Settings > Data Export. You can export projects, tasks, and files in JSON or CSV format.
+
+**Q: Do you offer nonprofit or educational discounts?**
+A: Yes! Verified nonprofits and educational institutions receive 50% off all paid plans. Apply at technovasolutions.com/discounts.
+
+**Q: What happens if I exceed my storage limit?**
+A: You'll receive warnings at 80% and 95% capacity. At 100%, you cannot upload new files until you delete old files or upgrade your plan.
+
+**Q: Can I have multiple workspaces?**
+A: Yes, each workspace is a separate account with its own subscription. Switch between workspaces in the user menu.
+
+**Q: Is there a mobile app?**
+A: Yes, available for iOS and Android. Download from the App Store or Google Play Store.
+
+**Q: How do I report a security vulnerability?**
+A: Email security@technovasolutions.com with details. We have a responsible disclosure program with rewards for valid reports.
+
+---
+
+**Document Version:** 2.1  
+**Last Updated:** December 2024  
+**Next Review:** March 2025
+
+For the most up-to-date information, visit help.technovasolutions.com
