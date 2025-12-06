@@ -38,8 +38,8 @@ graph TB
     
     subgraph "Core Services"
         RAG[RAG Chain]
-        LLM[LLM Service<br/>Azure OpenAI + Groq]
-        Embeddings[Embedding Model<br/>Azure OpenAI]
+        LLM[LLM Service<br/> Llama 3.3 70B + Gemini]
+        Embeddings[Embedding Model<br/>HuggingFace Embedding]
         Memory[Session Memory]
     end
     
@@ -82,7 +82,7 @@ graph TB
 - **Python**: 3.12+
 - **Docker** (optional): For containerized deployment
 - **API Keys**:
-  - Groq API key (primary LLM)
+  - Groq API key (primary LLM, OpenAI Wishper)
   - Google Gemini API key (fallback LLM)
   - Pinecone API key
   - Redis credentials (Redis Labs or self-hosted)
@@ -115,8 +115,8 @@ streaming-chatbot/
 │   │
 │   ├── 📁 core/                     # Core AI/ML components
 │   │   ├── __init__.py
-│   │   ├── llm_model.py             # LLM initialization (Azure + Groq fallback)
-│   │   ├── embedding_model.py       # Azure OpenAI embeddings
+│   │   ├── llm_model.py             # LLM initialization (Llama + Gemini for fallback)
+│   │   ├── embedding_model.py       # Huggingface embeddings
 │   │   ├── vectorstore.py           # Pinecone vector store integration
 │   │   └── prompt.py                # System prompts & templates
 │   │
@@ -164,7 +164,7 @@ streaming-chatbot/
 ├── 📄 architecture_diagram.png      # System architecture diagram
 │
 └── 📁 rag_knowledge_data_pipeline/  # Knowledge base ingestion
-    ├── rag_data_ingestion_hugembed.py  # HuggingFace embedding pipeline
+    ├── rag_data_ingestion_hugembed.py  # Huggingface embedding pipeline
     ├── rag_data_ingestion.py           # Alternative ingestion script
     └── kb_doc_support.txt              # Sample knowledge base document
 ```
@@ -258,7 +258,7 @@ The API will be available at: `http://localhost:8010`
 
 ### 1. Chat Endpoint (Streaming)
 
-**POST** `/api/v1/chat`
+**POST** `/chat`
 
 Stream AI responses in real-time using Server-Sent Events.
 
@@ -272,8 +272,8 @@ Stream AI responses in real-time using Server-Sent Events.
 
 **Response:** (Server-Sent Events)
 ```
-data: A Non-Disclosure Agreement (NDA)
-data: is a legal contract...
+data: Hello
+data: I am your Nova
 data: [DONE]
 ```
 
@@ -283,14 +283,14 @@ curl -X POST http://localhost:8010/api/v1/chat \
   -H "Content-Type: application/json" \
   -H "X-API-Key: your_api_key" \
   -d '{
-    "query": "Explain contract law",
+    "query": "What service you do ?",
     "session_id": "session_001"
   }'
 ```
 
 ### 2. Voice-to-Text Endpoint
 
-**POST** `/api/v1/voice-to-text`
+**POST** `voice-to-text`
 
 Convert audio to text for voice-based interactions.
 
