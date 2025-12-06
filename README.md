@@ -89,6 +89,86 @@ graph TB
 
 ---
 
+## 🔧 Project Structure
+
+```
+streaming-chatbot/
+│
+├── 📁 app/                          # Main application directory
+│   ├── __init__.py
+│   ├── main.py                      # FastAPI application entry point
+│   ├── config.py                    # Settings & environment configuration
+│   │
+│   ├── 📁 api/                      # API layer
+│   │   ├── __init__.py
+│   │   └── 📁 routes/               # API route handlers
+│   │       ├── __init__.py          # Router aggregation
+│   │       ├── chat_router.py       # Streaming chat endpoint (SSE)
+│   │       └── voice_text_router.py # Voice-to-text processing
+│   │
+│   ├── 📁 auth/                     # Authentication & security
+│   │   ├── __init__.py
+│   │   ├── auth.py                  # API key validation middleware
+│   │   ├── encryption.py            # Encryption utilities
+│   │   ├── generate_api_key.py      # API key generation script
+│   │   └── key_gen.py               # Key generation helpers
+│   │
+│   ├── 📁 core/                     # Core AI/ML components
+│   │   ├── __init__.py
+│   │   ├── llm_model.py             # LLM initialization (Azure + Groq fallback)
+│   │   ├── embedding_model.py       # Azure OpenAI embeddings
+│   │   ├── vectorstore.py           # Pinecone vector store integration
+│   │   └── prompt.py                # System prompts & templates
+│   │
+│   ├── 📁 services/                 # Business logic layer
+│   │   ├── __init__.py
+│   │   ├── chatbot.py               # RAG chain orchestration & session management
+│   │   └── voice_text.py            # Voice processing service
+│   │
+│   ├── 📁 redis/                    # Redis integration
+│   │   ├── __init__.py
+│   │   └── client.py                # Redis client configuration
+│   │
+│   ├── 📁 schemas/                  # Pydantic models
+│   │   ├── __init__.py
+│   │   └── chabot_schema.py         # Request/response schemas
+│   │
+│   ├── 📁 models/                   # Database models (if applicable)
+│   │   └── __init__.py
+│   │
+│   ├── 📁 logs/                     # Logging configuration
+│   │   ├── __init__.py
+│   │   ├── logger.py                # Structured logging setup
+│   │   └── chatbot.log              # Application logs
+│   │
+│   └── 📁 utils/                    # Utility functions
+│       └── __init__.py
+│
+├── 📁 test/                         # Test suite
+│   ├── __init__.py
+│   ├── test_embeddings.py           # Embedding model tests
+│   ├── test_llm_fallback.py         # LLM fallback mechanism tests
+│   ├── test_redis_connection.py     # Redis connectivity tests
+│   └── test_vector_store.py         # Pinecone integration tests
+│
+├── 📁 notebook/                     # Jupyter notebooks for experimentation
+│   ├── langcache.ipynb              # LangChain cache experiments
+│   └── notebook.ipynb               # General development notebook
+│
+├── 📄 Dockerfile                    # Docker container definition
+├── 📄 docker-compose.yml            # Multi-container orchestration
+├── 📄 requirements.txt              # Python dependencies
+├── 📄 .env                          # Environment variables (not in repo)
+├── 📄 .gitignore                    # Git ignore rules
+├── 📄 README.md                     # This file
+├── 📄 architecture_diagram.png      # System architecture diagram
+│
+└── 📁 rag_knowledge_data_pipeline/  # Knowledge base ingestion
+    ├── rag_data_ingestion_hugembed.py  # HuggingFace embedding pipeline
+    ├── rag_data_ingestion.py           # Alternative ingestion script
+    └── kb_doc_support.txt              # Sample knowledge base document
+```
+
 ## ⚙️ Installation
 
 ### 1. Clone the Repository
@@ -256,85 +336,7 @@ python rag_data_ingestion_hugembed.py
 
 ---
 
-## 🔧 Project Structure
 
-```
-streaming-chatbot/
-│
-├── 📁 app/                          # Main application directory
-│   ├── __init__.py
-│   ├── main.py                      # FastAPI application entry point
-│   ├── config.py                    # Settings & environment configuration
-│   │
-│   ├── 📁 api/                      # API layer
-│   │   ├── __init__.py
-│   │   └── 📁 routes/               # API route handlers
-│   │       ├── __init__.py          # Router aggregation
-│   │       ├── chat_router.py       # Streaming chat endpoint (SSE)
-│   │       └── voice_text_router.py # Voice-to-text processing
-│   │
-│   ├── 📁 auth/                     # Authentication & security
-│   │   ├── __init__.py
-│   │   ├── auth.py                  # API key validation middleware
-│   │   ├── encryption.py            # Encryption utilities
-│   │   ├── generate_api_key.py      # API key generation script
-│   │   └── key_gen.py               # Key generation helpers
-│   │
-│   ├── 📁 core/                     # Core AI/ML components
-│   │   ├── __init__.py
-│   │   ├── llm_model.py             # LLM initialization (Azure + Groq fallback)
-│   │   ├── embedding_model.py       # Azure OpenAI embeddings
-│   │   ├── vectorstore.py           # Pinecone vector store integration
-│   │   └── prompt.py                # System prompts & templates
-│   │
-│   ├── 📁 services/                 # Business logic layer
-│   │   ├── __init__.py
-│   │   ├── chatbot.py               # RAG chain orchestration & session management
-│   │   └── voice_text.py            # Voice processing service
-│   │
-│   ├── 📁 redis/                    # Redis integration
-│   │   ├── __init__.py
-│   │   └── client.py                # Redis client configuration
-│   │
-│   ├── 📁 schemas/                  # Pydantic models
-│   │   ├── __init__.py
-│   │   └── chabot_schema.py         # Request/response schemas
-│   │
-│   ├── 📁 models/                   # Database models (if applicable)
-│   │   └── __init__.py
-│   │
-│   ├── 📁 logs/                     # Logging configuration
-│   │   ├── __init__.py
-│   │   ├── logger.py                # Structured logging setup
-│   │   └── chatbot.log              # Application logs
-│   │
-│   └── 📁 utils/                    # Utility functions
-│       └── __init__.py
-│
-├── 📁 test/                         # Test suite
-│   ├── __init__.py
-│   ├── test_embeddings.py           # Embedding model tests
-│   ├── test_llm_fallback.py         # LLM fallback mechanism tests
-│   ├── test_redis_connection.py     # Redis connectivity tests
-│   └── test_vector_store.py         # Pinecone integration tests
-│
-├── 📁 notebook/                     # Jupyter notebooks for experimentation
-│   ├── langcache.ipynb              # LangChain cache experiments
-│   └── notebook.ipynb               # General development notebook
-│
-├── 📄 Dockerfile                    # Docker container definition
-├── 📄 docker-compose.yml            # Multi-container orchestration
-├── 📄 requirements.txt              # Python dependencies
-├── 📄 .env                          # Environment variables (not in repo)
-├── 📄 .gitignore                    # Git ignore rules
-├── 📄 README.md                     # This file
-├── 📄 architecture_diagram.png      # System architecture diagram
-│
-└── 📁 rag_knowledge_data_pipeline/  # Knowledge base ingestion
-    ├── rag_data_ingestion_hugembed.py  # HuggingFace embedding pipeline
-    ├── rag_data_ingestion.py           # Alternative ingestion script
-    └── kb_doc_support.txt              # Sample knowledge base document
-```
 
 ### Directory Descriptions
 
