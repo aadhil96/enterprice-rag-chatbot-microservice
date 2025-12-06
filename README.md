@@ -1,4 +1,4 @@
-# RAG Chatbot with FastAPI Streaming & Redis Cache
+# A Production-Ready Enterprise RAG Chatbot Microservice with FastAPI Streaming, Redis Caching, and High-Performance LLM Inference
 
 A production-ready **Retrieval-Augmented Generation (RAG)** chatbot API built with **FastAPI**, featuring real-time streaming responses, **Groq Llama 3.3 70B** and **Gemini 2.5 Pro** LLMs, **HuggingFace embeddings**, Redis-based LLM caching, Pinecone vector database, and an automated **knowledge data ingestion pipeline**.
 
@@ -185,7 +185,7 @@ Stream AI responses in real-time using Server-Sent Events.
 **Request Body:**
 ```json
 {
-  "query": "What is a Non-Disclosure Agreement?",
+  "query": "Hello, How are you ?",
   "session_id": "user_123"
 }
 ```
@@ -216,7 +216,7 @@ Convert audio to text for voice-based interactions.
 
 ---
 
-## � Knowledge Data Ingestion Pipeline
+## Knowledge Data Ingestion Pipeline
 
 The project includes an automated pipeline for processing and ingesting knowledge base documents into Pinecone.
 
@@ -256,7 +256,7 @@ python rag_data_ingestion_hugembed.py
 
 ---
 
-## �🔧 Project Structure
+## 🔧 Project Structure
 
 ```
 streaming-chatbot/
@@ -512,7 +512,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 For issues and questions:
 - Open an issue on GitHub
-- Contact: [your-email@example.com]
+- Contact: [aadhil.imam@gmail.com]
 
 ---
 
